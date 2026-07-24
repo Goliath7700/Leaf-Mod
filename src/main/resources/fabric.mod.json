@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "leafmod",
+	"version": "${version}",
+	"name": "Leaf Mod",
+	"description": "A mod where I mess around",
+	"authors": [
+		"Goliath7700"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/leafmod/icon.png",
+	"environment": "server",
+	"entrypoints": {
+		"main": [
+			"io.github.goliath7700.leafmod.LeafMod"
+		],
+		"client": [
+			"io.github.goliath7700.leafmod.client.LeafModClient"
+		],
+		"fabric-datagen": [
+			"io.github.goliath7700.leafmod.client.LeafModDataGenerator"
+		]
+	},
+	"mixins": [
+		"leafmod.mixins.json",
+		{
+			"config": "leafmod.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~26.3-",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
