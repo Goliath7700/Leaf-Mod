@@ -1,5 +1,7 @@
 package io.github.goliath7700.leafmod;
 
+import io.github.goliath7700.leafmod.itemGroups.ModCreativeModeTabs;
+import io.github.goliath7700.leafmod.items.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import net.minecraft.resources.Identifier;
@@ -22,6 +24,8 @@ public class LeafMod implements ModInitializer {
 		// Proceed with mild caution.
 
 		LOGGER.info("Hello Fabric world!");
+		ModItems.initialize();
+		ModCreativeModeTabs.initialize();
 	}
 
 	public static Identifier id(String path) {

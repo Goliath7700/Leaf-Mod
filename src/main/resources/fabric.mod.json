@@ -8,12 +8,11 @@
 		"Goliath7700"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+
 	},
 	"license": "MIT",
 	"icon": "assets/leafmod/icon.png",
-	"environment": "server",
+	"environment": "*",
 	"entrypoints": {
 		"main": [
 			"io.github.goliath7700.leafmod.LeafMod"
