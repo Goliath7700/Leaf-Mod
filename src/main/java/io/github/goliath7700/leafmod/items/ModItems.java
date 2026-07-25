@@ -12,6 +12,7 @@ public class ModItems {
     }
 
     public static final Item GLITCHED_MATTER = register(ModItemsIds.GLITCHED_MATTER, Item::new, new Item.Properties().rarity(Rarity.UNCOMMON));
+    public static final Item AMETHYST_STAFF = register(ModItemsIds.AMETHYST_STAFF, Item::new, new Item.Properties().rarity(Rarity.UNCOMMON));
 
     public static Item register(ResourceKey<Item> itemKey, Function<Item.Properties, Item> itemFactory, Item.Properties settings) {
         // Create the item instance.

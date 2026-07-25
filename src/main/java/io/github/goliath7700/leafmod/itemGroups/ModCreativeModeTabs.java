@@ -29,6 +29,7 @@ public class ModCreativeModeTabs {
             .title(Component.translatable("leafmod.itemGroup.leafmod"))
             .displayItems((params, output) -> {
                 output.accept(ModItems.GLITCHED_MATTER);
+                output.accept(ModItems.AMETHYST_STAFF);
 
                 // The tab builder also accepts Blocks
                 //output.accept(ModBlocks.CONDENSED_DIRT);

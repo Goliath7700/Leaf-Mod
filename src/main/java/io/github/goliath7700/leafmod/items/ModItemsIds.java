@@ -9,6 +9,7 @@ import net.minecraft.world.item.Item;
 public class ModItemsIds {
 
     public static final ResourceKey<Item> GLITCHED_MATTER = create("glitched_matter");
+    public static final ResourceKey<Item> AMETHYST_STAFF = create("amethyst_staff");
 
     public static ResourceKey<Item> create(String name) {
         // Create the item key.
