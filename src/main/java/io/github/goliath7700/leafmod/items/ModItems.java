@@ -1,10 +1,14 @@
 package io.github.goliath7700.leafmod.items;
 
 import net.minecraft.core.Registry;
+import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.*;
+import net.minecraft.world.item.component.SwingAnimation;
+import net.minecraft.world.item.component.Weapon;
 
+import javax.xml.crypto.Data;
 import java.util.function.Function;
 
 public class ModItems {
@@ -12,7 +16,8 @@ public class ModItems {
     }
 
     public static final Item GLITCHED_MATTER = register(ModItemsIds.GLITCHED_MATTER, Item::new, new Item.Properties().rarity(Rarity.UNCOMMON));
-    public static final Item AMETHYST_STAFF = register(ModItemsIds.AMETHYST_STAFF, Item::new, new Item.Properties().rarity(Rarity.UNCOMMON));
+    public static final Item AMETHYST_STAFF = register(ModItemsIds.AMETHYST_STAFF, Item::new, new Item.Properties().rarity(Rarity.UNCOMMON)
+            .component(DataComponents.SWING_ANIMATION, new SwingAnimation(SwingAnimationType.STAB, 20)));
 
     public static Item register(ResourceKey<Item> itemKey, Function<Item.Properties, Item> itemFactory, Item.Properties settings) {
         // Create the item instance.
