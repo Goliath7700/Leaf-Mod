@@ -3,12 +3,12 @@
 	"id": "leafmod",
 	"version": "${version}",
 	"name": "Leaf Mod",
-	"description": "A mod where I mess around",
+	"description": "A mod where I mess around, Fabricated!",
 	"authors": [
-		"Goliath7700"
+		"Goli7700"
 	],
 	"contact": {
-
+		"source": "https://github.com/Goliath7700/Leaf-Mod"
 	},
 	"license": "MIT",
 	"icon": "assets/leafmod/icon.png",
